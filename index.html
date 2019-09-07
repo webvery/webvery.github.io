@@ -35,16 +35,21 @@ a:hover, a:active {
       <br /><br /><br /><br /><br /><br />
       <h2>Webpack for Webvery</h2>
       <br /><br />
-      <h1>HHFLJ34</h1>
+      <h1 id="code"></h1>
       <br /><br />
       <p id="demo"></p>
-    </div>
+      <br /><br />
       </center>
       <script>
 
 var full = window.location.href;
 var half = full.substring(0,full.indexOf("?")+1);
 var code = full.replace(half,"");
+if(code.length > 12)
+{
+  code = "";
+}
+document.getElementById("code").innerHTML = code;
 document.getElementById("demo").innerHTML = '<a href="intent://webvery/?'+code+'#Intent;scheme=webpack;package=sdm.apps.webvery;end">Import Now</a>' ;
 </script>
   </body>
