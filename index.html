@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+
+var full = window.location.href;
+var half = full.substring(0,full.indexOf("?")+1);
+var code = full.replace(half,"");
+
+document.getElementById("demo").innerHTML = '<a href="intent://webvery/?'+code+'#Intent;scheme=webpack;package=sdm.apps.webvery;end"> Import Webpack </a>' ;
+
+
+</script>
+
+</body>
+</html>
