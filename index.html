@@ -11,37 +11,55 @@
      body {background-color: #FFFFFF;}
      h2   {color: #2196F3;
      font-family: 'Open Sans', sans-serif; }
+     h3   {
+     font-family: 'Open Sans', sans-serif; }
+     h4   {
+     font-family: 'Open Sans', sans-serif; }
+     h5   {
+     font-family: 'Open Sans', sans-serif; }
+      h6   {
+     font-family: 'Open Sans', sans-serif; }
      h1   {color: #808080; }
-     a:link, a:visited {
-  background-color: #2196F3;
-  color: white;
+     .cb
+     {
+      background-color: #2196F3;
+  color: white!important;
   padding: 14px 25px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-family: 'Open Sans', sans-serif;
   font-size:22px;
+     }
+     a:link, a:visited {
+   text-decoration: none;
+  color:#2196F3; 
+  font-family: 'Open Sans', sans-serif;
+  
 }
 
 a:hover, a:active {
-  background-color: #2196F3;
+   text-decoration: none;
+  color: #2196F3;
   font-family: 'Open Sans', sans-serif;
-  font-size:22px;
+  
 }
      </style>
   </head>
   <body>
     <center>
-      <br /><br /><br /><br /><br /><br />
+      <br /><br /><br /><br />
       <h2>Webpack for Webvery</h2>
       <br /><br />
       <h1 id="code"></h1>
       <br /><br />
       <p id="demo"></p>
+       <h4><a href="">I can't import Webpack.</a></h4>
       <br /><br />
+      <h3>Grow your audience with Webpack.</h3>
+      <h4><a href="documentation/index.html">Learn More</a></h4>
       </center>
       <script>
-
 var full = window.location.href;
 var half = full.substring(0,full.indexOf("?")+1);
 var code = full.replace(half,"");
@@ -50,7 +68,7 @@ if(code.length > 12)
   code = "";
 }
 document.getElementById("code").innerHTML = code;
-document.getElementById("demo").innerHTML = '<a href="intent://webvery/?'+code+'#Intent;scheme=webpack;package=sdm.apps.webvery;end">Import Now</a>' ;
+document.getElementById("demo").innerHTML = '<a class="cb" href="intent://webvery/?'+code+'#Intent;scheme=webpack;package=sdm.apps.webvery;end">Import Now</a>' ;
 </script>
   </body>
 </html>
