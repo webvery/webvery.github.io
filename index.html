@@ -2,18 +2,25 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Import Webpack to Webvery</title>
+    <title>Webpack for Webvery</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-     <meta name="Description" content="Webpack || Import Webpack to Webvery.">
-     <link rel="shortcut icon" type=image/png " href="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==">
+     <meta name="Description" content="Webpack for Webvery.">
+     <link rel="shortcut icon" type="image/png" href="bitmap.png">
      <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
      <style>
      body {background-color: #FFFFFF;}
-     h2   {color: #2196F3;
+     h1 {
+      color: #808080;
+     }
+     h6 {
+      color: #808080;
+      font-family: 'Open Sans', sans-serif;
+     }
+     h2   {color: #000000;
      font-family: 'Open Sans', sans-serif; }
      h3   {
      font-family: 'Open Sans', sans-serif; }
-     h4   {                                                                                
+     h4   {
      font-family: 'Open Sans', sans-serif; }
      h5   {
      font-family: 'Open Sans', sans-serif; }
@@ -21,6 +28,7 @@
      font-family: 'Open Sans', sans-serif; }
      .cb
      {
+    
       background-color: #2196F3;
   color: white!important;
   padding: 14px 25px;
@@ -32,16 +40,16 @@
      }
      a:link, a:visited {
    text-decoration: none;
-  color:#2196F3; 
+  color:#2196F3;
   font-family: 'Open Sans', sans-serif;
-  
+
 }
 
 a:hover, a:active {
    text-decoration: none;
   color: #2196F3;
   font-family: 'Open Sans', sans-serif;
-  
+
 }
      </style>
   </head>
@@ -51,10 +59,12 @@ a:hover, a:active {
       <h2>Webpack for Webvery</h2>
       <h1 id="code"></h1>
       <p id="demo"></p>
-       <h4><a href="">I can't import Webpack.</a></h4>
+       <h5 id="cant"><a href="faq.html">I can't import Webpack.</a></h5>
       <br/>
       <h4>Grow your audience with Webpack.</h4>
-      <h4><a href="documentation/index.html">Learn More</a></h4>
+      <h4><a href="docs/index.html">Learn More</a></h4>
+      <br/>
+      <h6>&copy; 2019 Webpack for Webvery by sdm Apps.</h6>
       </center>
       <script>
 var full = window.location.href;
@@ -62,10 +72,17 @@ var half = full.substring(0,full.indexOf("?")+1);
 var code = full.replace(half,"");
 if(code.length > 12)
 {
-  code = "";
+  document.getElementById("code").innerHTML = "<br>";
+document.getElementById("demo").innerHTML = '<a class="cb" href="http://play.google.com/store/apps/details?id=sdm.apps.webvery">Get Webvery</a>';
+document.getElementById("cant").innerHTML = "<br>";
 }
+else
+{
 document.getElementById("code").innerHTML = code;
-document.getElementById("demo").innerHTML = '<a class="cb" href="intent://webvery/?'+code+'#Intent;scheme=webpack;package=sdm.apps.webvery;S.browser_fallback_url=http%3A%2F%2Fzxing.org;end">Import Now</a>' ;
+document.getElementById("demo").innerHTML = '<a class="cb" href="intent://webvery/?'+code+'#Intent;scheme=webpack;package=sdm.apps.webvery;end">Import Now</a>';
+}
+
+
 </script>
   </body>
 </html>
